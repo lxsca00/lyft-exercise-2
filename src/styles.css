@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+:root {
+    --pink: #FF00BF;
+    --dark-purple: #333447;
+    --purple: #352384;
+    --gray: #728099;
+    --white: #fff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h5, .sign-up, .watch {
+    text-transform: uppercase;
+}
+
+h3, h5 {
+    margin: 0 0 1rem 0;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+hr {
+    width: 50%;
+    background: var(--white);
+}
+
+.header, nav, .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 1.5rem;
+    background: #76278F;
+}
+
+.header img {
+    height: 3rem;
+}
+
+.main {
+    background-image: url('../img/hero.gif');
+    background-repeat: no-repeat;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background: var(--white);
+    padding: 2rem;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+
+.main form h2, .sign-up {
+    color: var(--purple);
+}
+
+.main form input {
+    border: none;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--purple);
+    margin: 1rem 0;
+}
+
+.form-buttons {
+    width: 60%;
+    margin: 0.5rem 0 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-buttons button {
+    background: var(--pink);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    color: var(--white);
+}
+
+.form-buttons a {
+    width: fit-content;
+}
+
+.link {
+    font-size: 0.6rem;
+    text-decoration: none;
+    color: var(--gray);
+    cursor: pointer;
+    margin: 0 0 0.5rem 0;
+}
+
+.lyft-info, .footer {
+    padding: 2rem 6rem;
+}
+
+.lyft-info {
+    background: linear-gradient(#76278F, #2B1E66);
+    display: flex;
+    align-items: center ;
+    color: var(--white);
+    gap: 2rem
+}
+
+.lyft-info p {
+    margin: 0 0 2rem 0;
+}
+
+.lyft-info img {
+    width: 50%;
+}
+
+.lyft-videos {
+    width: 100%;
+}
+
+.video {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.video-center {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.video-description {
+    padding: 2rem;
+}
+
+.watch {
+    font-size: 0.6rem;
+}
+
+.footer {
+    background: var(--dark-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem
+}
+
+.stores img {
+    width: 70%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    gap: 2rem
+}
+
+.social-media button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+.social-media img {
+    filter: invert();
+    width: 100%;
+}
