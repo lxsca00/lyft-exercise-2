@@ -27,13 +27,35 @@ h3, h5 {
     margin: 0 0 1rem 0;
 }
 
-p {
-    font-size: 0.8rem;
+h5 {
+    font-size: 0.9rem;
+}
+
+p, li {
+    font-size: 1rem;
 }
 
 hr {
     width: 50%;
     background: var(--white);
+    margin: 1rem 0;
+}
+
+nav button {
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.background {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
 }
 
 .header, nav, .menu {
@@ -43,30 +65,41 @@ hr {
 }
 
 .header {
-    padding: 1.5rem;
-    background: #76278F;
+    padding: 2rem 4rem;
+    color: var(--white);
 }
 
-.header img {
+.logo-container img {
+    position: absolute;
     height: 3rem;
 }
 
-.main {
-    background-image: url('../img/hero.gif');
-    background-repeat: no-repeat;
+.logo-container img.top:hover {
+    opacity: 0;
+}
+
+.menu li {
+    margin: 0 1rem 0 0;
+    cursor: pointer;
 }
 
 .main form {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     background: var(--white);
-    padding: 2rem;
+    padding: 4rem 3rem;
     position: relative;
     margin: 0 0 0 auto;
 }
 
-.main form h2, .sign-up {
+h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 0 0.5rem 0
+}
+
+h2, .sign-up {
     color: var(--purple);
 }
 
@@ -78,23 +111,26 @@ hr {
 }
 
 .form-buttons {
-    width: 60%;
+    width: 100%;
     margin: 0.5rem 0 1.5rem 0;
+    gap: 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .form-buttons button {
+    width: 40%;
     background: var(--pink);
     border: none;
     border-radius: 0.25rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     color: var(--white);
+    font-size: 0.7rem;
 }
 
 .form-buttons a {
     width: fit-content;
+    font-size: 0.7rem;
 }
 
 .link {
@@ -112,9 +148,10 @@ hr {
 .lyft-info {
     background: linear-gradient(#76278F, #2B1E66);
     display: flex;
-    align-items: center ;
+    justify-content: space-around;
+    align-items: center;
     color: var(--white);
-    gap: 2rem
+    gap: 5rem
 }
 
 .lyft-info p {
@@ -122,7 +159,7 @@ hr {
 }
 
 .lyft-info img {
-    width: 50%;
+    width: 40%;
 }
 
 .lyft-videos {
@@ -132,15 +169,19 @@ hr {
 .video {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    background: var(--white);
 }
 
 .video-center {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    background: var(--white);
 }
 
 .video-description {
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .watch {
@@ -158,28 +199,50 @@ hr {
 .footer-info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem
+    gap: 2rem;
+    margin: 0 0 2rem 0;
+}
+
+.footer li {
+    margin: 0 0 1rem 0;
+}
+
+.footer li:hover {
+    cursor: pointer;
+    color: var(--pink);
+}
+
+.stores {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .stores img {
-    width: 70%;
+    width: 50%;
+    cursor: pointer;
 }
 
 .social-media {
     display: flex;
     justify-content: space-between;
-    width: 25%;
-    gap: 2rem
+    width: 10%;
+    gap: 1.5rem
 }
 
 .social-media button{
     background: none;
     border: none;
     cursor: pointer;
-    width: 25%;
+    width: 20%;
 }
 
 .social-media img {
     filter: invert();
     width: 100%;
+}
+
+.copyright {
+    font-size: 0.7rem;
+    margin: 0.5rem 0 0 0;
 }
